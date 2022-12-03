@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import EntryType
+from entries.serializers import EntryTypeSerializer
+
+class EntryTypeViewSet(viewsets.ModelViewSet):
+    queryset = EntryType.objects.all()
+    serializer_class = EntryTypeSerializer
+    

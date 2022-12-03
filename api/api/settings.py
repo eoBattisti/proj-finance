@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'bank_account',
     'entries',
     'users',
-]
+    'rest_framework',
+    
+] 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
